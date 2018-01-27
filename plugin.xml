@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="Metar Plugin" lan="LAN_PLUGIN_Metar_NAME" version="2.0" date="2012-08-01" compatibility="2.0" installRequired="true" >
+	<author name="Barry Keal G4HDU" url="http://www.keal.me.uk" />
+	<summary>A Metar Plugin to display current and future weather for airports</summary>
+	<description lan="LAN_PLUGIN_METAR_DIZ">A Metar Plugin to display current and future weather for airports</description>
+	<category>misc</category>
+	<keywords>
+		<word>metar</word>
+		<word>empty</word>
+		<word>template</word>
+	</keywords>
+	<adminLinks>
+		<link url='admin_config.php' description='Configure Metar Plugin' icon='images/metar_32.png' iconSmall='images/metar_16.png' primary='true' >LAN_CONGIGURE</link>
+		<link url="admin_config.php?mode=options" description="Configure Metar Prefs" icon="manage" >Metar Prefs</link>
+	</adminLinks>
+	<siteLinks>
+		<link url="{e_PLUGIN}_METAR/_METAR.php" perm='everyone' sef='index'>LAN_PLUGIN_METAR_LINK</link>
+	</siteLinks>
+	<pluginPrefs>
+		<pref name="icao">EGGP</pref>
+		<pref name="iconset">1</pref>
+		<pref name="userclass">255</pref>
+		<pref name="singlemode">0</pref>
+	</pluginPrefs>
+	<userClasses>
+		<class name="metar_userclass" description="Metar Userclass" />
+	</userClasses>
+</e107Plugin>
